@@ -1,0 +1,92 @@
+html {
+  --bg: #FCFCFC;
+  --bg-panel: #EBEBEB;
+  --color-headings: #0077FF;
+  --color-text: #333333;
+  height: 100%;
+  font-family: "Montserrat";
+}
+
+html[data-theme=dark] {
+  --bg: #333333;
+  --bg-panel: #434343;
+  --color-headings: #3694FF;
+  --color-text: #B5B5B5;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg);
+}
+
+.app {
+  width: 300px;
+  height: 550px;
+  box-shadow: 0px 0px 3px 5px #e6e4e4;
+  margin: 30px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.app .app-header {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  box-shadow: 0px 0px 1px 3pxrgb 240, 240, 240;
+}
+.app .app-header .app-header--name {
+  color: var(--color-headings);
+}
+.app .app-header .light-dark--mode {
+  border: none;
+  background-color: #fff;
+  outline: none;
+}
+.app .app-header .fa-bars,
+.app .app-header .fa-moon {
+  font-size: 20px;
+}
+.app .app-display {
+  height: 120px;
+  box-shadow: 0px 0px 1px 3px #f0f0f0;
+}
+.app .app-display .textview {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 1px 3px #f0f0f0;
+  height: 60px;
+  width: 100%;
+  font-size: 20px;
+  text-indent: 10px;
+}
+.app .app-display #output {
+  float: right;
+  padding-right: 20px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+}
+.app .app-content table {
+  margin: 10px auto;
+}
+.app .app-content button {
+  background-color: var(--bg);
+  margin: 7px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 0px 5px 5px #e0e0e0;
+  outline: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+.app .app-content .equal {
+  color: #fff;
+  background-color: #ff5100;
+}
+
+/*# sourceMappingURL=style.css.map */
